@@ -439,6 +439,7 @@ SWIFT_CLASS("_TtC10MapstedMap19MNMapViewController")
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil SWIFT_UNAVAILABLE;
 @end
 
+
 @class NTPackageStatus;
 
 SWIFT_CLASS("_TtC10MapstedMap24MNPackageManagerListener")
@@ -490,6 +491,11 @@ SWIFT_CLASS("_TtC10MapstedMap13MapstedMapApi")
 @interface MapstedMapApi : NSObject
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+@interface MapstedMapApi (SWIFT_EXTENSION(MapstedMap)) <PropertyCompletionListener>
+- (void)onCompletionWithPropertyId:(NSInteger)propertyId;
 @end
 
 
@@ -996,6 +1002,7 @@ SWIFT_CLASS("_TtC10MapstedMap19MNMapViewController")
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil SWIFT_UNAVAILABLE;
 @end
 
+
 @class NTPackageStatus;
 
 SWIFT_CLASS("_TtC10MapstedMap24MNPackageManagerListener")
@@ -1047,6 +1054,11 @@ SWIFT_CLASS("_TtC10MapstedMap13MapstedMapApi")
 @interface MapstedMapApi : NSObject
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+@interface MapstedMapApi (SWIFT_EXTENSION(MapstedMap)) <PropertyCompletionListener>
+- (void)onCompletionWithPropertyId:(NSInteger)propertyId;
 @end
 
 
