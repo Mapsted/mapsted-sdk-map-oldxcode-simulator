@@ -526,13 +526,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) MapstedMapSy
 
 
 
-@interface MapstedMapSyncApi (SWIFT_EXTENSION(MapstedMap)) <CoreInitCallback>
-- (void)onSuccess;
-- (void)onStatusUpdateWithUpdate:(EnumSdkUpdate)update;
-- (void)onFailureWithErrorCode:(EnumSdkError)errorCode;
-- (void)onStatusMessageWithMessageType:(enum StatusMessageType)messageType;
-@end
-
 
 
 
@@ -1088,13 +1081,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) MapstedMapSy
 
 
 
-
-@interface MapstedMapSyncApi (SWIFT_EXTENSION(MapstedMap)) <CoreInitCallback>
-- (void)onSuccess;
-- (void)onStatusUpdateWithUpdate:(EnumSdkUpdate)update;
-- (void)onFailureWithErrorCode:(EnumSdkError)errorCode;
-- (void)onStatusMessageWithMessageType:(enum StatusMessageType)messageType;
-@end
 
 
 
